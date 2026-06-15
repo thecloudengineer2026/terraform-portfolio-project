@@ -1,0 +1,16 @@
+# Node / Next.js
+nextjs-blog/node_modules/
+nextjs-blog/.next/
+nextjs-blog/out/
+
+# Terraform
+terraform-nextjs/.terraform/
+terraform-nextjs/terraform.tfstate
+terraform-nextjs/terraform.tfstate.backup
+terraform-nextjs/*.tfstate
+terraform-nextjs/*.tfstate.*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
