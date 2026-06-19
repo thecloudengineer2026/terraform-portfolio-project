@@ -1,6 +1,10 @@
 CI/CD Pipeline Documentation
 Project Overview
 
+## CI/CD Architecture
+
+![CI/CD Pipeline Architecture](../architecture/cicd_pipeline_architecture.png)
+
 This project extends the Terraform Portfolio Website Deployment project by implementing a Continuous Integration and Continuous Deployment (CI/CD) pipeline using GitHub Actions.
 
 The objective was to automate the software delivery process so that code changes could be validated, built, and deployed without manual intervention.

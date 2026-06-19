@@ -267,6 +267,9 @@ This shift from service-first thinking to requirement-first thinking significant
 * Requirements Analysis
 * First-Principles Problem Solving
 
+## Additional Documentation
+- [CI/CD Pipeline Documentation](./docs/cicd-pipeline.md)
+
 ---
 
 ## Author
