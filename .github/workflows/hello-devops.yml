@@ -1,4 +1,4 @@
-name: Hello DevOps
+name: Build Next.js Site
 
 on:
   push:
@@ -6,9 +6,24 @@ on:
       - main
 
 jobs:
-  hello:
+  build-site:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: nextjs-blog
+
     steps:
-      - name: Say hello
-        run: echo "Hello from GitHub Actions"
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Next.js Site
+        run: npm run build
