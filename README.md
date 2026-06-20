@@ -22,6 +22,28 @@ https://ddtei5pqndbkb.cloudfront.net
 
 ![Architecture Diagram](./architecture/nextjs_s3_cloudfront_architecture.png)
 
+
+---
+
+## Phase 2: CI/CD Automation
+
+This project was later extended to include a fully automated deployment pipeline using GitHub Actions.
+
+The pipeline:
+
+- Builds the Next.js application
+- Authenticates to AWS securely using GitHub Secrets
+- Deploys static files to Amazon S3
+- Invalidates CloudFront cache automatically
+- Eliminates manual deployment steps
+
+### CI/CD Architecture
+
+![CI/CD Architecture](./architecture/cicd_pipeline_architecture.png)
+
+For full documentation:
+
+[CI/CD Pipeline Documentation](./docs/cicd-pipeline.md)
 ---
 
 ## Business Problem

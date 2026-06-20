@@ -5,6 +5,7 @@ Project Overview
 
 ![CI/CD Pipeline Architecture](../architecture/cicd_pipeline_architecture.png)
 
+
 This project extends the Terraform Portfolio Website Deployment project by implementing a Continuous Integration and Continuous Deployment (CI/CD) pipeline using GitHub Actions.
 
 The objective was to automate the software delivery process so that code changes could be validated, built, and deployed without manual intervention.
@@ -187,3 +188,27 @@ Infrastructure is important.
 Automation is important.
 
 However, the most valuable skill is learning to reason from first principles and design systems that solve business problems rather than simply implementing technologies.
+
+## GitHub Actions Workflow
+
+The deployment pipeline is defined using GitHub Actions and executes automatically whenever changes are pushed to the main branch.
+
+Key stages include:
+
+- Repository checkout
+- Node.js environment setup
+- Dependency installation
+- Next.js build process
+- AWS authentication via GitHub Secrets
+- Deployment to Amazon S3
+- CloudFront cache invalidation
+
+![GitHub Actions Workflow](../architecture/gitactions_workflow_yaml.png)
+
+## Successful Pipeline Execution
+
+After configuration of GitHub Actions and AWS credentials, the pipeline successfully completed all deployment stages automatically.
+
+This validated the complete CI/CD workflow from source control through production deployment.
+
+![Successful GitHub Actions Run](../architecture/github_actions_success.png)
