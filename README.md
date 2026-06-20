@@ -270,6 +270,58 @@ This shift from service-first thinking to requirement-first thinking significant
 ## Additional Documentation
 - [CI/CD Pipeline Documentation](./docs/cicd-pipeline.md)
 
+
+## CI/CD Pipeline
+
+This project now includes a GitHub Actions CI/CD pipeline that:
+
+- Builds the Next.js application
+- Deploys static assets to Amazon S3
+- Invalidates CloudFront cache
+- Updates production automatically on every push to main
+
+---
+
+# Project Screenshots
+
+## Architecture Design
+
+The solution uses Amazon S3 for static website hosting, Amazon CloudFront for global content delivery, Terraform for Infrastructure as Code, and GitHub Actions for CI/CD automation.
+
+![AWS Architecture](./architecture/nextjs_s3_cloudfront_architecture.png)
+
+---
+
+## Terraform Project Structure
+
+Infrastructure was provisioned and managed using Terraform.
+
+![Terraform Project](./Screenshots/Project%20Terraform%20Plan%20in%20VS%20Code.png)
+
+---
+
+## CloudFront Configuration
+
+Amazon CloudFront provides low-latency global content delivery and edge caching.
+
+![CloudFront Distribution](./Screenshots/Portfolio%20CloudFront.png)
+
+---
+
+## Automated CI/CD Pipeline
+
+Code changes pushed to GitHub automatically trigger the deployment workflow.
+
+![GitHub Actions Workflow](./architecture/cicd_pipeline_architecture.png)
+
+---
+
+## Live Website Deployment
+
+Final production deployment delivered through CloudFront.
+
+![Live Website](./Screenshots/Project%20Nextjs%20Website%20Live.png)
+
 ---
 
 ## Author
